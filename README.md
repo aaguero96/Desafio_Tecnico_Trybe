@@ -77,8 +77,8 @@
   1. Ter uma boa cobertura de testes Front e Back;
   2. Aplicar boas práticas de escrita de código;
   3. Documentação do projeto (README), que inclua:
-    - Passo a passo para instalar e executar o projeto. Incluindo instruções especiais para instalar dependências e/ou bancos de dados, se houver;
-    - Endereço da aplicação no Heroku, se houver (ou outro serviço de deployment).
+  - Passo a passo para instalar e executar o projeto. Incluindo instruções especiais para instalar dependências e/ou bancos de dados, se houver;
+  - Endereço da aplicação no Heroku, se houver (ou outro serviço de deployment).
   4. Ter um linter configurado;
   5. O projeto deverá ser entregue via repositório pessoal no GitHub (utilizar boas práticas de criação/nomeação de branches, além de mensagens de commits bem descritas e commits com um escopo nítido).
 </details>
@@ -94,17 +94,17 @@
 
   1. `npm init -y`;
   2. Instalando dependências;
-    - express
-    - dotenv
-    - http-status-codes
-    - sequelize
-    - sequelize-cli
-    - mysql2
+  - express
+  - dotenv
+  - http-status-codes
+  - sequelize
+  - sequelize-cli
+  - mysql2
   3. Intalando dependências de desenvolimento.
-    - eslint
-    - @types/express
-    - @tsconfig/node14
-    - @types/node
+  - eslint
+  - @types/express
+  - @tsconfig/node14
+  - @types/node
 </details>
 
 <details>

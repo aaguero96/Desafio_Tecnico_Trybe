@@ -43,7 +43,7 @@
   </summary>
 
   1. Visualizar lista de tarefas
-    - Esta lista deve ser ordenável por ordem alfabética, data de criação ou por status.
+  - Esta lista deve ser ordenável por ordem alfabética, data de criação ou por status.
   2. Inserir uma nova tarefa na lista;
   3. Remover uma tarefa da lista;
   4. Atualizar uma tarefa da lista;
@@ -113,4 +113,12 @@
   </summary>
 
   1. `npx eslint --init`.
+</details>
+
+<details>
+  <summary>
+    <strong>3. Iniciando o sequelize</strong>
+  </summary>
+
+  1. `npx sequelize-cli init`.
 </details>

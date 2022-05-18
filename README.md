@@ -43,7 +43,7 @@
   </summary>
 
   1. Visualizar lista de tarefas
-    a. Esta lista deve ser ordenável por ordem alfabética, data de criação ou por status.
+    - Esta lista deve ser ordenável por ordem alfabética, data de criação ou por status.
   2. Inserir uma nova tarefa na lista;
   3. Remover uma tarefa da lista;
   4. Atualizar uma tarefa da lista;
@@ -77,8 +77,40 @@
   1. Ter uma boa cobertura de testes Front e Back;
   2. Aplicar boas práticas de escrita de código;
   3. Documentação do projeto (README), que inclua:
-    a. Passo a passo para instalar e executar o projeto. Incluindo instruções especiais para instalar dependências e/ou bancos de dados, se houver;
-    b. Endereço da aplicação no Heroku, se houver (ou outro serviço de deployment);
+    - Passo a passo para instalar e executar o projeto. Incluindo instruções especiais para instalar dependências e/ou bancos de dados, se houver;
+    - Endereço da aplicação no Heroku, se houver (ou outro serviço de deployment).
   4. Ter um linter configurado;
   5. O projeto deverá ser entregue via repositório pessoal no GitHub (utilizar boas práticas de criação/nomeação de branches, além de mensagens de commits bem descritas e commits com um escopo nítido).
+</details>
+
+## Planejamento da solução
+
+### BackEnd
+
+<details>
+  <summary>
+    <strong>1. Iniciando npm</strong>
+  </summary>
+
+  1. `npm init -y`;
+  2. Instalando dependências;
+    - express
+    - dotenv
+    - http-status-codes
+    - sequelize
+    - sequelize-cli
+    - mysql2
+  3. Intalando dependências de desenvolimento.
+    - eslint
+    - @types/express
+    - @tsconfig/node14
+    - @types/node
+</details>
+
+<details>
+  <summary>
+    <strong>2. Iniciando Lint</strong>
+  </summary>
+
+  1. `npx eslint --init`.
 </details>

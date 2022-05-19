@@ -8,7 +8,7 @@ class Task extends Model {
 
   public createdAt!: Date;
   
-  public status!: "pendente" | "em andamento" | "pronto";
+  public status!: string;
 };
 
 Task.init({
@@ -33,7 +33,8 @@ Task.init({
 }, {
   underscored: true,
   sequelize: db,
-  modelName: 'tasks',
+  modelName: 'Tasks',
+  tableName: 'Tasks',
   timestamps: false,
 });
 

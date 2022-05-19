@@ -1,11 +1,20 @@
 import * as express from 'express';
+import TaskController from './database/controllers/TaskController';
 
 class App {
   public app: express.Express;
 
+  private taskController: TaskController;
+
   constructor() {
     this.app = express();
     this.config();
+    this.taskController = new TaskController();
+
+    this.app.get(
+      '/tasks',
+      this.taskController.getAll,
+    );
   }
 
   private config(): void {

@@ -100,6 +100,7 @@
   - sequelize
   - sequelize-cli
   - mysql2
+  - nodemon
   3. Intalando dependências de desenvolimento.
   - eslint
   - @types/express
@@ -244,4 +245,31 @@
   2. Esse endpoint disponibilizara a propriedade getAll criada anteriormente;
   3. Deverá ser retornado um status 200;
   4. Deverá ser retornado um json com todas os valores do banco de dados.
+</details>
+
+<details>
+  <summary>
+    <strong>15. Criando `npm run database:up`</strong>
+  </summary>
+
+  1. Será criado essa rota no npm, dentro do `package.json` em `scripts`;
+  2. Será capaz de iniciar o banco de dados com o migration e os seeders.
+</details>
+
+<details>
+  <summary>
+    <strong>16. Criando `npm run database:down`</strong>
+  </summary>
+
+  1. Será criado essa rota no npm, dentro do `package.json` em `scripts`;
+  2. Será capaz de deletar o banco de dados com o migration.
+</details>
+
+<details>
+  <summary>
+    <strong>16. Criando `npm run start:local`</strong>
+  </summary>
+
+  1. Será criado essa rota no npm, dentro do `package.json` em `scripts`;
+  2. Será capaz de inicar em localhost/3003 com o nodemon;
 </details>

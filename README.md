@@ -215,5 +215,22 @@
     <strong>11. Propriedade getAll</strong>
   </summary>
 
-  1. Criar propriedade `getAll` dentro da classe `TaskService`, ela será capaz de visaulizar todos os dados dentro da tabela `Tasks`.
+  1. Criar propriedade `getAll` dentro da classe `TaskService`, ela será capaz de visaulizar todos os dados dentro da tabela `Tasks`;
+  2. Criar propriedade `getAll` dentro da classe `TaskController`;
+</details>
+
+<details>
+  <summary>
+    <strong>12. Criando App</strong>
+  </summary>
+
+  1. Criar arquivo `app.ts` dentro da pasta `src`, esse arquivo terá a classe App capaz de inicar as rotas escolhidas.
+</details>
+
+<details>
+  <summary>
+    <strong>13. Criando Server</strong>
+  </summary>
+
+  1. Criar arquivo `server.ts` dentro da pasta `src`, esse arquivo será capaz de inicializar o App.
 </details>

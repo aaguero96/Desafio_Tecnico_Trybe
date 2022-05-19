@@ -234,3 +234,14 @@
 
   1. Criar arquivo `server.ts` dentro da pasta `src`, esse arquivo será capaz de inicializar o App.
 </details>
+
+<details>
+  <summary>
+    <strong>14. Criando endpoint `/tasks`</strong>
+  </summary>
+
+  1. Esse endpoint será do tipo `GET`;
+  2. Esse endpoint disponibilizara a propriedade getAll criada anteriormente;
+  3. Deverá ser retornado um status 200;
+  4. Deverá ser retornado um json com todas os valores do banco de dados.
+</details>

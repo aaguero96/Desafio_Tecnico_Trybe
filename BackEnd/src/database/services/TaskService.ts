@@ -9,4 +9,14 @@ export default class TaskService {
       console.error(e);
     }
   };
+
+  getByTask = async (filter: string) => {
+    try {
+      const tasks = await Task.findAll();
+      const filteredTasks = tasks.filter(({ task }) => task.toLowerCase().includes(filter.toLowerCase()));
+      return filteredTasks;
+    } catch (e) {
+      console.error(e);
+    }
+  };
 }

@@ -12,6 +12,11 @@ class App {
     this.taskController = new TaskController();
 
     this.app.get(
+      '/tasks/:filter',
+      this.taskController.getByTask,
+    );
+
+    this.app.get(
       '/tasks',
       this.taskController.getAll,
     );

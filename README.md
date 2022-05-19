@@ -113,6 +113,7 @@
   </summary>
 
   1. `npx eslint --init`.
+  2. Adicionar arquivo `.eslintignore`.
 </details>
 
 <details>
@@ -121,4 +122,54 @@
   </summary>
 
   1. `npx sequelize-cli init`.
+</details>
+
+<details>
+  <summary>
+    <strong>4. Configurando typescript</strong>
+  </summary>
+
+  1. Adicionar arquivo `tsconfig.json` na raiz da pasta BackEnd, indicando a raiz do diretório de saída e de entrada;
+  2. Adicionar pasta `src`, que irá conter as principais informações do projeto;
+  3. Adicionar pasta `build` que irá buildar o src;
+  4. Adicionar o arquivo `.env` na raiz do projeto, e colocar informações sensiveis lá;
+  5. Dentro do arquivo `tsconfig.json` colocar um nome para sua base de dados, a ser criada ou já criada;
+  6. Excluir `config.json`.
+</details>
+
+<details>
+  <summary>
+    <strong>5. Configurando sequelize</strong>
+  </summary>
+
+  1. Adicionar pasta `database` dentro da pasta src;
+  2. Adicionar os arquivos do sequelize init dentro da pasta `src/database`;
+  3. Adicionar arquivo `.sequelizerc` na raiz da pasta BackEnd, indicando onde estará o enderaçamento;
+</details>
+
+<details>
+  <summary>
+    <strong>6. Criando Migrations</strong>
+  </summary>
+
+  1. Usar o comando `npx sequelize migration:generate --name create-table-tasks` para criar uma migration;
+  2. Criar a tabela Task a partir dessa migration;
+  - Tabela Task deve conter as colunas:
+    - id (primary key, auto-increment-integer);
+    - task (not null, string);
+    - createdAt (not null, date)
+    - status (not null, default: "Em andamento", string).
+</details>
+
+<details>
+  <summary>
+    <strong>7. Criando Seeders</strong>
+  </summary>
+
+  1. Usar o comando `npx sequelize seed:generate --name tasks` para criar um seeder;
+  2. Popular a tabela Tasks:
+  - ('Limpar a mesa', 'pronto');
+  - ('Limpar a cozinha', 'em andamento');
+  - ('Concluir tarefa de casa', 'pendente');
+  - Todas as tarefas estarão com tempo corrente.
 </details>

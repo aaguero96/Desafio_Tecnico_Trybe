@@ -182,3 +182,12 @@
   1. Substituir `index.js` para `index.ts` na pasta models;
   2. Iniciar o sequelize dentro desse arquivo.
 </details>
+
+<details>
+  <summary>
+    <strong>9. Criando Task Model</strong>
+  </summary>
+
+  1. Criar arquivo `TaskModel.ts` dentro da pasta `database/models`;
+  2. Configurar o model de acordo com o banco de dados.
+</details>

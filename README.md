@@ -267,9 +267,21 @@
 
 <details>
   <summary>
-    <strong>16. Criando `npm run start:local`</strong>
+    <strong>17. Criando `npm run start:local`</strong>
   </summary>
 
   1. Será criado essa rota no npm, dentro do `package.json` em `scripts`;
   2. Será capaz de inicar em localhost/3003 com o nodemon;
+</details>
+
+<details>
+  <summary>
+    <strong>18. Criando endpoint `/tasks/:filter`</strong>
+  </summary>
+
+  1. Esse endpoint será do tipo `GET`;
+  2. Esse endpoint será capaz de filtrar a tabela dados pelo nome da tarefa;
+  3. Deverá ser retornado um status 200;
+  4. Deverá ser retornado um json com todas os valores do banco de dados após o filtro;
+  5. O `filter` passado como `params` deve ser capaz de encontrar algum elemento, caso o contrário, será retornado um status 404, com uma json contendo a propriedade `message: 'This taskName doesnt exist'`.
 </details>

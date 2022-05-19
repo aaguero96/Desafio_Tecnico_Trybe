@@ -5,17 +5,17 @@ module.exports = {
       [
         {
           task: 'Limpar a mesa',
-          createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+          created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
           status: 'pronto',
         },
         {
           task: 'Limpar a cozinha',
-          createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+          created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
           status: 'em andamento',
         },
         {
           task: 'Concluir tarefa de casa',
-          createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
+          created_at: Sequelize.literal('CURRENT_TIMESTAMP'),
           status: 'pendente',
         },
       ],

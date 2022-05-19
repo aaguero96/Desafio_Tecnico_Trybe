@@ -191,3 +191,29 @@
   1. Criar arquivo `TaskModel.ts` dentro da pasta `database/models`;
   2. Configurar o model de acordo com o banco de dados.
 </details>
+
+<details>
+  <summary>
+    <strong>9. Criando Task Service</strong>
+  </summary>
+
+  1. Criar a pasta `services` em `database`;
+  2. Criar arquivo `TaskService.ts` dentro da pasta `database/services`.
+</details>
+
+<details>
+  <summary>
+    <strong>10. Criando Task Controller</strong>
+  </summary>
+
+  1. Criar a pasta `controllers` em `database`;
+  2. Criar arquivo `TaskController.ts` dentro da pasta `database/services`.
+</details>
+
+<details>
+  <summary>
+    <strong>11. Propriedade getAll</strong>
+  </summary>
+
+  1. Criar propriedade `getAll` dentro da classe `TaskService`, ela será capaz de visaulizar todos os dados dentro da tabela `Tasks`.
+</details>

@@ -173,3 +173,12 @@
   - ('Concluir tarefa de casa', 'pendente');
   - Todas as tarefas estarão com tempo corrente.
 </details>
+
+<details>
+  <summary>
+    <strong>8. Configurando Index do Model</strong>
+  </summary>
+
+  1. Substituir `index.js` para `index.ts` na pasta models;
+  2. Iniciar o sequelize dentro desse arquivo.
+</details>

@@ -285,3 +285,17 @@
   4. Deverá ser retornado um json com todas os valores do banco de dados após o filtro;
   5. O `filter` passado como `params` deve ser capaz de encontrar algum elemento, caso o contrário, será retornado um status 404, com uma json contendo a propriedade `message: 'This taskName doesnt exist'`.
 </details>
+
+<details>
+  <summary>
+    <strong>19. Criando endpoint `/tasks`</strong>
+  </summary>
+
+  1. Esse endpoint será do tipo `POST`;
+  2. Esse endpoint será capaz de criar uma tarefa nova;
+  3. Deverá ser retornado um status 201;
+  4. Deverá ser retornado um json com o novo valor;
+  5. O corpo da requisição deve conter o valor da data, do nome da tarefa e do status;
+  6. Caso algum dos valores acima não esteja na requisição, deve-se retornar o status 400, com uma json contendo a propriedade `message: '<Body param> id required'`;
+  7. Caso o valor do status não seja `pronto`, `em andamento` ou `pendente`, retornar um estatus 400, com um json contendo a propriedade `message: 'Status incorrect'`.
+</details>

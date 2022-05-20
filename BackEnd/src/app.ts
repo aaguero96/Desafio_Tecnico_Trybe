@@ -37,6 +37,11 @@ class App {
       taskMiddleware.validatecreatedAt,
       this.taskController.update,
     );
+
+    this.app.delete(
+      '/tasks/:id',
+      this.taskController.delete,
+    );
   }
 
   private config(): void {

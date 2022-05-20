@@ -51,4 +51,15 @@ export default class TaskService {
       console.error(e);
     };
   };
+
+  delete = async (id: number) => {
+    try {
+      const result = await Task.destroy({
+        where: { id },
+      });
+      return result;
+    } catch (e) {
+      console.error(e);
+    };
+  };
 }

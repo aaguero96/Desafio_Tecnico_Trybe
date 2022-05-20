@@ -40,4 +40,13 @@ export default class TaskController {
     }); }
     return res.status(StatusCodes.OK).json({ message: 'Value was edited' });
   };
+
+  delete =async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const result = await this.service.delete(Number(id));
+    if (!result) { return res.status(StatusCodes.NOT_FOUND).json({
+      message: 'id didnt found',
+    }); }
+    return res.status(StatusCodes.OK).json({ message: 'Value was deleted' });
+  };
 }

@@ -314,3 +314,30 @@
   7. Caso o valor do status não seja `pronto`, `em andamento` ou `pendente`, retornar um estatus 400, com um json contendo a propriedade `message: 'Status incorrect'`;
   8. Caso não seja possível editar, deve-se retornar um status 404, com uma json contendo a propriedade `message: 'id didnt found'`;
 </details>
+
+<details>
+  <summary>
+    <strong>21. Criando endpoint `/tasks/:id`</strong>
+  </summary>
+
+  1. Esse endpoint será do tipo `PUT`;
+  2. Esse endpoint será capaz de editar uma tarefa existente;
+  3. Deverá ser retornado um status 200;
+  4. Deverá ser retornado um json com a propriedade `message: 'Value was edited'`;
+  5. O corpo da requisição deve conter o valor da data, do nome da tarefa e do status;
+  6. Caso algum dos valores acima não esteja na requisição, deve-se retornar o status 400, com uma json contendo a propriedade `message: '<Body param> id required'`;
+  7. Caso o valor do status não seja `pronto`, `em andamento` ou `pendente`, retornar um estatus 400, com um json contendo a propriedade `message: 'Status incorrect'`;
+  8. Caso não seja possível editar, deve-se retornar um status 404, com uma json contendo a propriedade `message: 'id didnt found'`;
+</details>
+
+<details>
+  <summary>
+    <strong>21. Criando endpoint `/tasks/:id`</strong>
+  </summary>
+
+  1. Esse endpoint será do tipo `DELETE`;
+  2. Esse endpoint será capaz de deletar uma tarefa existente;
+  3. Deverá ser retornado um status 404;
+  4. Deverá ser retornado um json com a propriedade `message: 'Value was deleted'`;
+  5. Caso não seja possível editar, deve-se retornar um status 404, com uma json contendo a propriedade `message: 'id didnt found'`;
+</details>

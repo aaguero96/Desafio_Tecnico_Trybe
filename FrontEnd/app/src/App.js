@@ -7,6 +7,7 @@ function App() {
   const [date, setDate] = useState('');
   const [status, setStatus] = useState('pronto');
   const [data, setData] = useState([]);
+  const [update, setUpdate] = useState(true);
 
   const InputHandler = (setter, { target: { value } }) => {
     setter(value);
@@ -21,7 +22,7 @@ function App() {
 
   useEffect(() => {
     tasksData();
-  }, []);
+  }, [update]);
 
   return (
     <div>
@@ -55,7 +56,13 @@ function App() {
           <option value="pendente">Pendente</option>
         </select>
       </label>
-      <button>
+      <button
+        onClick={async () => {
+          const body = { task, createdAt: date, status };
+          await apiFunctions.createTask(body);
+          setUpdate(!update);
+        }}
+      >
         Adicionar
       </button>
       <table>

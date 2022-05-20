@@ -11,6 +11,11 @@ const tasksData = async () => {
   return data;
 };
 
+const createTask = async (body) => {
+  await api.post('/tasks', body);
+};
+
 export {
   tasksData,
+  createTask,
 };

@@ -22,5 +22,12 @@ export default class TaskController {
       message: 'This taskName doesnt exist',
     }); }
     return res.status(StatusCodes.OK).json(tasks);
-  }
+  };
+
+  create = async (req: Request, res: Response) => {
+    const { task, createdAt, status } = req.body;
+    const newTask = await this.service.create({ task, createdAt, status });
+    if (!newTask) { return res.status(StatusCodes.INTERNAL_SERVER_ERROR).end() }
+    return res.status(StatusCodes.CREATED).json(newTask);
+  };
 }

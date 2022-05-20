@@ -1,5 +1,12 @@
 import Task from '../models/TaskModel';
 
+type task = {
+  id?: number,
+  task: string,
+  createdAt: Date,
+  status: 'pronto' | 'em andamento' | 'pendente',
+};
+
 export default class TaskService {
   getAll = async () => {
     try {
@@ -18,5 +25,17 @@ export default class TaskService {
     } catch (e) {
       console.error(e);
     }
+  };
+
+  create = async (newTask: task) => {
+    const { task, createdAt, status } = newTask;
+    try {
+      const result = await Task.create(
+        { task, createdAt, status }
+      );
+      return result;
+    } catch (e) {
+      console.error(e);
+    };
   };
 }

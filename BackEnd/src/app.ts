@@ -1,5 +1,6 @@
 import * as express from 'express';
 import TaskController from './database/controllers/TaskController';
+import * as taskMiddleware from './database/middlewares/TaskMiddleware';
 
 class App {
   public app: express.Express;
@@ -19,6 +20,14 @@ class App {
     this.app.get(
       '/tasks',
       this.taskController.getAll,
+    );
+
+    this.app.post(
+      '/tasks',
+      taskMiddleware.validateStatus,
+      taskMiddleware.validateTask,
+      taskMiddleware.validatecreatedAt,
+      this.taskController.create,
     );
   }
 

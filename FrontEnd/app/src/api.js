@@ -15,7 +15,12 @@ const createTask = async (body) => {
   await api.post('/tasks', body);
 };
 
+const deleteTask = async (id) => {
+  await api.delete(`/tasks/${id}`);
+};
+
 export {
   tasksData,
   createTask,
+  deleteTask,
 };

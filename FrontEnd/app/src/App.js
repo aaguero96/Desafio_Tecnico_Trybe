@@ -83,12 +83,19 @@ function App() {
                   <td>{ createdAt }</td>
                   <td>{ status }</td>
                   <td>
-                    <button>
+                    <button
+                      id={`Remover-${id}`}
+                      onClick={async ({ target }) => {
+                        const selectedId = target.id.split('-')[1];
+                        await apiFunctions.deleteTask(selectedId);
+                        setUpdate(!update);
+                      }}
+                    >
                       Remover
                     </button>
                   </td>
                   <td>
-                    <button>
+                    <button id={`Editar-${id}`}>
                       Editar
                     </button>
                   </td>

@@ -1,5 +1,18 @@
 # Bem vindo a minha solução do desafio Técnico proposto pela Trybe
 
+## Iniciaciando o projeto
+
+1. `git clone git@github.com:aaguero96/Desafio_Tecnico_Trybe.git`;
+2. `cd Desafio_Tecnico_Trybe`;
+3. `cd ./BackEnd`;
+4. `npm install`;
+5. `npm run start:local`;
+6. `cd ../FrontEnd`;
+7. `npm install`;
+8. `cd ./app`;
+9. `npm install`;
+10. `npm start`;
+
 ## Explicação do Projeto
 
 <details>
@@ -401,6 +414,7 @@
   </summary>
 
   1. Função para GET /tasks;
+  2. Função para POST /tasks;
 </details>
 
 <details>
@@ -419,5 +433,26 @@
   </summary>
 
   1. Deve ser do tipo button;
-  2. Ao pressiona-lo deve chamar o endpoint POST /tasks .
+  2. Ao pressiona-lo deve chamar o endpoint POST /tasks;
+  3. Deve ser atualizada a lista após o click.
+</details>
+
+<details>
+  <summary>
+    <strong>9. Funcionalidades do botão remover</strong>
+  </summary>
+
+  1. Ao clicar o botão deve ser chamado o endpoint DELETE /tasts/:id;
+  2. Deve ser atualizada a lista após o click;
+  3. Somente o item clicado deve ser excluido.
+</details>
+
+<details>
+  <summary>
+    <strong>10. Funcionalidades do botão editar</strong>
+  </summary>
+
+  1. Ao clicar o botão deve ser chamado o endpoint DELETE /tasts/:id;
+  2. Deve ser atualizada a lista após o click;
+  3. Somente o item clicado deve ser excluido.
 </details>

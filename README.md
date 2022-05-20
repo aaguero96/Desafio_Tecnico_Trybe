@@ -1,5 +1,18 @@
 # Bem vindo a minha solução do desafio Técnico proposto pela Trybe
 
+## Iniciaciando o projeto
+
+1. `git clone git@github.com:aaguero96/Desafio_Tecnico_Trybe.git`;
+2. `cd Desafio_Tecnico_Trybe`;
+3. `cd ./BackEnd`;
+4. `npm install`;
+5. `npm run start:local`;
+6. `cd ../FrontEnd`;
+7. `npm install`;
+8. `cd ./app`;
+9. `npm install`;
+10. `npm start`;
+
 ## Explicação do Projeto
 
 <details>
@@ -340,4 +353,106 @@
   3. Deverá ser retornado um status 404;
   4. Deverá ser retornado um json com a propriedade `message: 'Value was deleted'`;
   5. Caso não seja possível editar, deve-se retornar um status 404, com uma json contendo a propriedade `message: 'id didnt found'`;
+</details>
+
+### FrontEnd
+
+<details>
+  <summary>
+    <strong>1. Iniciando aplicação React</strong>
+  </summary>
+
+  1. `npx create-react-app app`;
+  2. `npm init -y`
+  3. Instalando dependências
+  - axios
+  - cors
+  4. Intalando dependências de desenvolimento.
+  - eslint
+  - @types/cors
+</details>
+
+<details>
+  <summary>
+    <strong>2. Iniciando Lint</strong>
+  </summary>
+
+  1. `npx eslint --init`.
+  2. Adicionar arquivo `.eslintignore`.
+</details>
+
+<details>
+  <summary>
+    <strong>3. Criar input para Task</strong>
+  </summary>
+
+  1. Input deve ser do tipo texto;
+  2. Input deve ser associado a uma variavel task.
+</details>
+
+<details>
+  <summary>
+    <strong>4. Criar input para createdAt</strong>
+  </summary>
+
+  1. Input deve ser do tipo date;
+  2. Input deve ser associado a uma variavel date.
+</details>
+
+<details>
+  <summary>
+    <strong>5. Criar input para ststus</strong>
+  </summary>
+
+  1. Deve ser do tipo select com as opções `em andamento`, `pendente` e `pronto`;
+  2. Input deve ser associado a uma variavel status.
+</details>
+
+<details>
+  <summary>
+    <strong>6. Criar funções que fazem as requisições para API criada</strong>
+  </summary>
+
+  1. Função para GET /tasks;
+  2. Função para POST /tasks;
+</details>
+
+<details>
+  <summary>
+    <strong>7. Renderizar a lista</strong>
+  </summary>
+
+  1. Deve chamar o endpoint GET /tasks;
+  2. Deve renderizar o resultado em uma tabela;
+  3. Deve ser renderizada junto a lista botões de remover e editar para cada item.
+</details>
+
+<details>
+  <summary>
+    <strong>8. Criar um Botão de adicionar</strong>
+  </summary>
+
+  1. Deve ser do tipo button;
+  2. Ao pressiona-lo deve chamar o endpoint POST /tasks;
+  3. Deve ser atualizada a lista após o click.
+</details>
+
+<details>
+  <summary>
+    <strong>9. Funcionalidades do botão remover</strong>
+  </summary>
+
+  1. Ao clicar o botão deve ser chamado o endpoint DELETE /tasts/:id;
+  2. Deve ser atualizada a lista após o click;
+  3. Somente o item clicado deve ser excluido.
+</details>
+
+<details>
+  <summary>
+    <strong>10. Funcionalidades do botão editar</strong>
+  </summary>
+
+  1. Ao clicar o botão deve ser chamado o endpoint DELETE /tasts/:id;
+  2. Deve ser atualizada a lista após o click;
+  3. Somente o item clicado deve ser excluido.
 </details>

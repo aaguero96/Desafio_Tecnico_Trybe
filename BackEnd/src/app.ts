@@ -29,6 +29,14 @@ class App {
       taskMiddleware.validatecreatedAt,
       this.taskController.create,
     );
+
+    this.app.put(
+      '/tasks/:id',
+      taskMiddleware.validateStatus,
+      taskMiddleware.validateTask,
+      taskMiddleware.validatecreatedAt,
+      this.taskController.update,
+    );
   }
 
   private config(): void {

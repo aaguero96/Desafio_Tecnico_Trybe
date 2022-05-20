@@ -27,7 +27,17 @@ export default class TaskController {
   create = async (req: Request, res: Response) => {
     const { task, createdAt, status } = req.body;
     const newTask = await this.service.create({ task, createdAt, status });
-    if (!newTask) { return res.status(StatusCodes.INTERNAL_SERVER_ERROR).end() }
+    if (!newTask) { return res.status(StatusCodes.INTERNAL_SERVER_ERROR).end(); }
     return res.status(StatusCodes.CREATED).json(newTask);
+  };
+
+  update = async (req: Request, res: Response) => {
+    const { task, createdAt, status } = req.body;
+    const { id } = req.params;
+    const newTask = await this.service.update(Number(id), { task, createdAt, status });
+    if (!newTask) { return res.status(StatusCodes.NOT_FOUND).json({
+      message: 'id didnt found',
+    }); }
+    return res.status(StatusCodes.OK).json({ message: 'Value was edited' });
   };
 }

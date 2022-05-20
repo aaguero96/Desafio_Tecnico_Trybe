@@ -38,4 +38,17 @@ export default class TaskService {
       console.error(e);
     };
   };
+
+  update = async (id: number, newTask: task) => {
+    const { task, createdAt, status } = newTask;
+    try {
+      const result = await Task.update(
+        { task, createdAt, status },
+        { where: { id } },
+      );
+      return result;
+    } catch (e) {
+      console.error(e);
+    };
+  };
 }
